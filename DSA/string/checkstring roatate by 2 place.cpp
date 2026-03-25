@@ -1,6 +1,5 @@
 class Solution {
   public:
-  // Function to rotate the string anticlockwise by 2 places
    void rotateanticlockwise(string &s){
        char c=s[0];
        int index=1;
@@ -9,7 +8,7 @@ class Solution {
            index++;
        }
        s[0]=c;
-       // Step 2: Rotate the string anticlockwise by 2 places
+       
    }
    void rotateclockwise(string &s){
        char c=  s[s.size()-1];
@@ -30,12 +29,12 @@ class Solution {
         string clockwise;
         string anticlockwise;
         clockwise=s1;
-        //  function call the  clockwise rotation function twice to rotate the string s1 by 2 places in the clockwise direction and store the result in the variable clockwise.
+        
         rotateclockwise(clockwise);
         rotateclockwise(clockwise);
         if(s1==clockwise)
         return true;
-        // function call the  anticlockwise rotation function twice to rotate the string s1 by 2 places in the anticlockwise direction and store the result in the variable anticlockwise.
+        
         anticlockwise=s1;
         rotateanticlockwise(anticlockwise);
         rotateanticlockwise(anticlockwise);
