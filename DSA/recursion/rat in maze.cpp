@@ -23,8 +23,11 @@ class Solution {
             ///  we have also anothr way to write this condition in one line but it is not that much readable so i have written in multiple lines 
             /// like left and right and up and down in one line but it is not that much readable so i have written in multiple lines 
             /// here is exapmle of one line condition
-             
-            
+            /// for left ke liye if(valid(i, j-1, n) && maze[i][j-1] == 1 && !visited[i][j-1]) 
+            /// for right ke liye if(valid(i, j+1, n) && maze[i][j+1] == 1 && !visited[i][j+1])
+            // for up ke liye if(valid(i-1, j, n) && maze[i-1][j] == 1 && !visited[i-1][j])
+            // for down ke liye if(valid(i+1, j, n) && maze
+            /// so we right in one line but it is not that much readable so i have written in multiple lines
             if(valid(i + row[k], j + col[k], n) 
                && maze[i + row[k]][j + col[k]] == 1 
                && !visited[i + row[k]][j + col[k]]) {
