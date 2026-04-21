@@ -22,3 +22,14 @@ public:
         return head;
     }
 };
+// better approach
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if(head == NULL || head->next == NULL) return head;
+        ListNode* newHead = reverseList(head->next);
+        head->next->next = head;  // important
+        head->next = NULL;        // important
+        return newHead;
+    }
+};
